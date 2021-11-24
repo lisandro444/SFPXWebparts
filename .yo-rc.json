@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.11.0",
+    "libraryName": "spfx-custom-list-view",
+    "libraryId": "3c5ebbe9-6d1b-4bba-9dc0-5c4d70679913",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

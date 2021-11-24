@@ -1,0 +1,210 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.spfxCustomListView  {
+  font-family: "Montserrat Regular", "Gotham Book";
+  /* font-size: 16pt; */
+  font-size: 12pt;
+
+
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    
+  }
+
+  .row {
+    @include ms-Grid-row; 
+    margin: 0;  
+    
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+
+//WEBPART LIST VIEW CUSTOM STYLES
+
+.wpTitleReact {
+  box-sizing: border-box;
+}
+
+.wpTitleReact a {
+  text-decoration: none !important;
+}
+
+.Header { 
+  background-color: transparent;
+}
+
+.Footer { 
+  background-color: transparent;
+}
+
+ //table wrapper
+ .wpTableWrapper {   
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+//alternating row color
+.wpTableWrapper tr:nth-child(even){
+  background-color: #E6E6E6;
+}
+
+//table cell style
+.wpTableWrapper tr td {
+  vertical-align: top !important;
+  padding-left: 10px !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px;
+  /* border-right: 1px solid #FFF; */
+  border-right: none;
+}
+
+  //table header
+.wpTableWrapper th {
+  background-color: rgb(39, 97, 147) !important;
+  color: #FFF !important;
+  font-family: "Montserrat Medium", "Gotham Medium";
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.wpToolsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagerWrapper {
+  padding: 1.25rem 1rem;
+  margin-right: auto;
+
+}
+
+.pagerWrapper select {
+  width: 130px;
+  border: 1px solid #ababab;
+  padding: 5px;
+  //background-image: url("/Style%20Library/mw.portal/img/Icon_CaretDown_Green.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  overflow: hidden;
+  font-family: "Montserrat Medium", "Gotham Medium";
+  font-weight: normal;
+
+}
+
+.printWrapper {
+  padding: 1.25rem 1rem;
+  
+}
+
+.mwButton {  
+    font-family: "Montserrat Bold", "Gotham Bold";    
+    color: #fff;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    padding: 8px 40px;
+    background-color: #FF931E;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 10pt;
+    border: none;
+}
+.mwButton:hover {
+  background-color: #999;
+}
+
+.exportWrapper{
+  padding: 1.25rem 1rem;
+  margin-left:auto;
+  
+}
+
+.wpTextLink, .wpTextLink:visited, .wpTextLink:active, .wpTextLink:focus {  
+  font-family: "Montserrat Medium", "Gotham Medium";
+  color: #f87c00 !important;  
+  font-size: 11pt;
+}
+
+.wpTextLink:hover {
+  color: #777 !important;
+}
+
+div[class^="propertyPaneTitleBar"]{
+  height: auto !important; //fix for bloced web part property title
+}
+
+
+
+//END WEBPART CUSTOM STYLES
+
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}

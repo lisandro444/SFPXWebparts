@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-custom-list-view-client-side-solution",
+    "id": "3c5ebbe9-6d1b-4bba-9dc0-5c4d70679913",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-custom-list-view.sppkg"
+  }
+}
